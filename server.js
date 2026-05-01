@@ -143,6 +143,11 @@ app.post("/ask", async (req, res) => {
   }
 });
 
+
+app.get("/", (req, res) => {
+  res.send("Backend is running successfully 🚀");
+});
+
 // =========================
 // SERVER START
 // =========================
