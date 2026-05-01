@@ -146,7 +146,9 @@ app.post("/ask", async (req, res) => {
 // =========================
 // SERVER START
 // =========================
-app.listen(5000, () => {
-  console.log("Merged Server running at http://localhost:5000");
-  console.log("Features: Fun Fact, Journal Prompt, Helper Bot, Gemini Chat");
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
+
